@@ -7215,7 +7215,7 @@ input, select, textarea {
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
-		padding: 2rem 2rem 2cqmax 2rem;
+		padding: 2rem 2rem 0rem 2rem;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;
@@ -7232,7 +7232,7 @@ input, select, textarea {
 	@media screen and (max-width: 1680px) {
 
 		.wrapper.style1 > .inner {
-			padding: 2rem 2rem 2rem 2rem;
+			padding: 3.5rem 2rem 2rem 2rem;
 		}
 
 	}
