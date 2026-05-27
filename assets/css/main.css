@@ -7215,7 +7215,7 @@ input, select, textarea {
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
-		padding: 7rem 3.5rem 5rem 3.5rem ;
+		padding: 2rem 2rem 0rem 2rem;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;
@@ -7232,7 +7232,7 @@ input, select, textarea {
 	@media screen and (max-width: 1680px) {
 
 		.wrapper.style1 > .inner {
-			padding: 5rem 2.5rem 3rem 2.5rem ;
+			padding: 3.5rem 2rem 2rem 2rem;
 		}
 
 	}
@@ -7240,7 +7240,7 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		.wrapper.style1 > .inner {
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2.5rem 1rem 1rem 1rem;
 		}
 
 	}
@@ -7628,7 +7628,7 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		margin: 3rem 0;
+		margin: 0.5rem 0;
 		position: relative;
 	}
 

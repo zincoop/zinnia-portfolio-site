@@ -2,3 +2,62 @@
     margin-bottom: 0;
     color: grey
 }
+/* Circular project avatars used in Featured Projects */
+.project-avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 0.6rem auto;
+    transition: transform 220ms cubic-bezier(.2, .9, .2, 1), box-shadow 220ms ease;
+    transform-origin: center center;
+    /* reserve space so scaling doesn't push layout */
+    will-change: transform;
+    transform: scale(0.89285714285);
+    /* center and add spacing below */
+}
+
+@media (max-width: 720px) {
+    .project-avatar {
+        width: 88px;
+        height: 88px;
+    }
+}
+
+/* Increase size on hover/focus while preventing layout shift. Wrap the image in a link (.project-link) so interaction is on the button. */
+.project-link {
+    display: inline-block;
+    /* shrinkwrap */
+    padding: 12px;
+    /* reserve area around avatar for growth */
+    margin-bottom: 0.2rem;
+    border-radius: 50%;
+    line-height: 0;
+    /* remove inline whitespace */
+}
+
+.project-link:focus {
+    outline: none;
+}
+
+.project-link:focus-visible {
+    box-shadow: 0 0 0 4px rgba(66, 133, 244, 0.18);
+}
+
+.project-link:hover .project-avatar,
+.project-link:focus .project-avatar {
+    transform: scale(1);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 720px) {
+    .project-link {
+        padding: 8px;
+    }
+
+    .project-link:hover .project-avatar,
+    .project-link:focus .project-avatar {
+        transform: scale(1.08);
+    }
+}
